@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(New File) - PlantUML Editor</title>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            justify-content: stretch;
+            width: 100%;
+            height: 100%;
+        }
+        #container > * {
+            flex: 1 1 0;
+            resize: horizontal;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <textarea id="editor">@startuml
+Alice -> Bob
+Bob --> Alice
+@enduml</textarea>
+        <div id="viewer">
+        </div>
+    </div>
+    <script>
+        require('./src/browser');
+    </script>
+</body>
+</html>
