@@ -25,7 +25,7 @@
     "eslint-plugin-react": "^5.2.2"
   },
   "dependencies": {
-    "electron": "^0.4.1",
+    "electron": "^10.0.0",
     "electron-prebuilt": "^1.2.7",
     "node-plantuml": "^0.4.4"
   }
